@@ -1,0 +1,596 @@
+.container {
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+
+/* ------------------ Tours ------------------ */
+
+.tours {}
+
+.tour {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+}
+
+.tour__link {}
+
+.tour__img {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    /* background-size: contain; */
+}
+
+.tour__information-wrap {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 60px;
+    height: 40px;
+}
+
+.tour__information {
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.tour__information i {
+    margin-right: 6px;
+}
+
+.tour__content {
+    padding: 31px 25px 33px;
+}
+
+.tour__title {
+    display: block;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    animation: un-text-animation-black 0.3s linear;
+}
+
+.tour__title:hover {
+    animation: text-animation-black linear 0.3s forwards;
+}
+
+.tour__description {
+    display: block;
+    font-size: 14px;
+    color: #7f7f7f;
+    margin: 8px 0;
+}
+
+.tour__other {
+    display: flex;
+    /* padding-right: 40%; */
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+.tour__other i {
+    margin-right: 6px;
+}
+
+.tour__other div:first-child {
+    margin-right: 16px;
+}
+
+.tour__price {}
+
+.tour__quality {}
+
+
+/* ----------------- Preview ----------------- */
+
+.preview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    user-select: none;
+}
+
+.preview__small-title {
+    font-size: 33px;
+    font-family: 'Satisfy', cursive;
+    color: var(--primary-color);
+}
+
+.preview__big-title {
+    font-size: 65px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.preview__video {}
+
+.preview__video-background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+}
+
+.preview__video-img {
+    display: block;
+    width: 100%;
+}
+
+.preview__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preview__play-btn:hover>img {
+    transform: scale(1.1, 1.1);
+}
+
+.preview__description {
+    font-size: 14px;
+    color: #717171;
+    margin: 36px 0 40px;
+    width: 900px;
+}
+
+.preview__view-more-btn {
+    height: 60px;
+    width: 220px;
+}
+
+.preview__view-more-link {
+    font-size: 14px;
+    line-height: 60px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.preview__video--play {
+    display: none;
+}
+
+.preview__video-demo {
+    --width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--width);
+    height: calc(var(--width) * 9 / 16);
+}
+
+.preview__video-check:checked~.preview__video--play {
+    display: block;
+    animation: appear 0.3s linear forwards;
+}
+
+.preview__overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.preview__video-check {
+    display: none;
+}
+
+
+/* ------------- Reviewers ------------- */
+
+.reviewers {
+    background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/skiing-parallax-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    user-select: none;
+}
+
+.reviewers__wrap {
+    margin: 110px 16px 140px;
+}
+
+.reviewers__title {
+    --height: 65px;
+    display: block;
+    font-size: var(--height);
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: var(--height);
+}
+
+.reviewers__description {
+    display: block;
+    font-size: 17px;
+    color: var(--white-color);
+    width: 650px;
+    margin: 10px auto 30px;
+}
+
+.reviewers__reviewer {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.reviewers__img {}
+
+.reviewers__information {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.reviewers__attraction {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    animation: un-text-animation-black linear 0.3s forwards;
+}
+
+.reviewers__attraction:hover {
+    animation: text-animation-black linear 0.3s forwards;
+}
+
+.reviewers__rate {
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+.reviewers__rate>i {
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.reviewers__comment {
+    color: #717171;
+    font-size: 14px;
+    display: block;
+}
+
+.reviewers__name {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-top: 12px;
+}
+
+.operations {
+    text-align: center;
+    margin: 145px 0 0 0;
+}
+
+.operations__title {
+    margin-bottom: 68px;
+}
+
+.operations__small-title {
+    display: block;
+    font-family: 'Satisfy', cursive;
+    font-size: 33px;
+    color: var(--primary-color);
+}
+
+.operations__big-title {
+    --height: 65px;
+    display: block;
+    color: #000;
+    font-size: var(--height);
+    font-weight: 600;
+    line-height: var(--height);
+}
+
+.operations__description {
+    display: block;
+    color: #717171;
+    font-size: 17px;
+    margin-top: 12px;
+    padding: 0 20px;
+}
+
+.operations__items {}
+
+.operations__item {
+    padding: 0 40px;
+}
+
+.operations__item-img {
+    animation: slide-down-3px linear 0.2s;
+}
+
+.operations__item-img:hover {
+    animation: slide-up-3px linear 0.2s forwards;
+}
+
+.operations__item-title {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 27px 0 11px;
+}
+
+.operations__item-description {
+    display: block;
+    font-size: 14px;
+    color: #717171;
+}
+
+.achievements {
+    margin-top: 165px;
+}
+
+.achievements__img {
+    background-size: contain;
+    width: 100%;
+    display: block;
+}
+
+.achievements__member {
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements__member-inf {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: #3fcfd3;
+    text-align: center;
+    color: var(--white-color);
+    padding: 32px 24px;
+    animation: slide-down ease-out 0.4s forwards;
+}
+
+.achievements__member:hover .achievements__member-inf {
+    animation: slide-up ease-out 0.4s forwards;
+}
+
+.achievements__member-inf>span {
+    display: block;
+}
+
+.achievements__name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.achievements__description {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.achievements__contact {}
+
+.achievements__contact-link {
+    color: #fff;
+    display: inline-block;
+    padding: 4px;
+    margin: 8px 8px 0;
+}
+
+.achievements__achievement {
+    color: var(--white-color);
+    background-color: #3abdc1;
+    text-align: center;
+    padding: 72px 0;
+}
+
+.achievements__achievement>span {
+    display: block;
+    font-weight: 600;
+}
+
+.achievements__number {
+    font-size: 65px;
+}
+
+.achievements__type {
+    font-size: 18px;
+}
+
+.resort {
+    margin-top: 105px;
+}
+
+.resort__content {
+    text-align: center;
+}
+
+.resort__content>span {
+    display: block;
+}
+
+.resort__small-title {
+    font-size: 33px;
+    line-height: 33px;
+    font-family: 'Satisfy', cursive;
+    color: var(--primary-color);
+}
+
+.resort__big-title {
+    font-size: 65px;
+    line-height: 65px;
+    font-weight: 600;
+    margin: 12px 0 18px;
+}
+
+.resort__description {
+    font-size: 17px;
+    color: #717171;
+    width: 530px;
+    margin: 0 auto 40px;
+}
+
+.resort__items {
+    padding: 0 40px;
+}
+
+.resort__item-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.resort__item {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 16px;
+}
+
+.resort__item-background {
+    position: relative;
+}
+
+.resort__item-overlay {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.resort__img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    animation: un-img-animation linear 0.3s forwards;
+}
+
+.resort__item:hover .resort__img {
+    animation: img-animation linear 0.3s forwards;
+}
+
+.resort__item-title {
+    --size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Satisfy', cursive;
+    font-size: var(--size);
+    line-height: var(--size);
+    color: #fff;
+}
+
+.resort__star {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    right: 35px;
+    background-color: var(--primary-color);
+    height: 15%;
+    width: 15%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+@keyframes text-animation-black {
+    from {
+        color: #000;
+    }
+    to {
+        color: var(--primary-color);
+    }
+}
+
+@keyframes un-text-animation-black {
+    from {
+        color: var(--primary-color);
+    }
+    to {
+        color: #000;
+    }
+}
+
+@keyframes slide-up-3px {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes slide-down-3px {
+    from {
+        transform: translateY(-3px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes img-animation {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.05, 1.05);
+    }
+}
+
+@keyframes un-img-animation {
+    from {
+        transform: scale(1.05, 1.05);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

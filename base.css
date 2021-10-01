@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #3fd0d4;
+    --white-color: #fff;
+    --text-color-1: #212121;
+    --text-color-2: #40d0d4;
+    --header-height: 80px;
+}
+
+
+/* ------------------- ALL -------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+.main-wrap {
+    width: 100%;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 13px;
+    height: 30px;
+    /* max-width: 200px; */
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    animation: un-button-animation linear 0.5s;
+}
+
+.button:hover {
+    animation: button-animation linear 0.5s forwards;
+}
+
+
+/* ------------------------ Animation ------------------------ */
+
+@keyframes button-animation {
+    from {
+        background-color: var(--primary-color);
+    }
+    to {
+        background-color: #3cadb1;
+    }
+}
+
+@keyframes un-button-animation {
+    from {
+        background-color: #3cadb1;
+    }
+    to {
+        background-color: var(--primary-color);
+    }
+}

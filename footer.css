@@ -1,0 +1,165 @@
+.footer {
+    background-color: #212121;
+    padding: 35px 110px 80px;
+}
+
+.footer * {
+    color: #fff;
+}
+
+.footer__items {}
+
+.footer__item {
+    padding: 0 16px;
+    margin-top: 65px;
+}
+
+.footer__logo {}
+
+.footer__logo-img {
+    width: 100%;
+}
+
+.footer__contact-title {
+    font-size: 17px;
+    display: block;
+    color: #9b9b9b;
+    margin-top: 16px;
+}
+
+.footer__contact-wrap {
+    margin-top: 18px;
+}
+
+.footer__contact {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.footer__contact * {
+    animation: un-text-animation-white linear 0.3s forwards;
+}
+
+.footer__contact i {
+    font-size: 14px;
+    width: 16px;
+    margin-right: 12px;
+}
+
+.footer__contact:hover * {
+    animation: text-animation-white linear 0.3s forwards;
+}
+
+.footer__title {
+    font-size: 18px;
+    display: block;
+    color: #fff;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.footer__posts {}
+
+.footer__post {
+    margin-bottom: 30px;
+}
+
+.footer__post span {
+    display: block;
+}
+
+.footer__post-address {
+    font-size: 14px;
+    color: #919191;
+}
+
+.footer__post-time {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.footer__content {
+    font-size: 14px;
+    color: #919191;
+    margin: 10px 0;
+}
+
+.footer__input-boxs {
+    margin-top: 25px;
+}
+
+.footer__input-box {
+    width: 100%;
+    background-color: #595959;
+    margin-bottom: 8px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__input-box i {
+    display: block;
+    width: 50px;
+    padding: 16px 20px;
+}
+
+.footer__input {
+    background-color: #595959;
+    height: 50px;
+    width: 100%;
+    display: block;
+    flex: 1;
+    outline: none;
+}
+
+.footer__input::placeholder {
+    color: #fff;
+}
+
+.footer__button {
+    height: 50px;
+    width: 100%;
+}
+
+.footer__developer {
+    padding: 12px 0 16px;
+    background-color: #212121;
+}
+
+.remake {
+    font-size: 13px;
+    color: #a9a9a9;
+    display: block;
+    text-align: center;
+}
+
+.dev {
+    font-size: 13px;
+    color: #fff;
+    animation: un-text-animation-white linear 0.3s forwards;
+}
+
+.dev:hover {
+    animation: text-animation-white linear 0.3s forwards;
+}
+
+@keyframes text-animation-white {
+    from {
+        color: #fff;
+    }
+    to {
+        color: var(--primary-color);
+    }
+}
+
+@keyframes un-text-animation-white {
+    from {
+        color: var(--primary-color);
+    }
+    to {
+        color: #fff;
+    }
+}
